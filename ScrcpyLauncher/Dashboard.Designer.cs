@@ -336,6 +336,7 @@
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Dashboard_Load;
             windowDecorationPanel.ResumeLayout(false);
             windowDecorationPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).EndInit();

@@ -16,3 +16,22 @@ C:\Files\Projects\Desktop App Projects\ScrcpyLauncher\ScrcpyLauncher\obj\Debug\n
 C:\Files\Projects\Desktop App Projects\ScrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.genruntimeconfig.cache
 C:\Files\Projects\Desktop App Projects\ScrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ref\ScrcpyLauncher.dll
 C:\Files\Projects\Desktop App Projects\ScrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Dashboard.resources
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\bin\Debug\net6.0-windows\ScrcpyLauncher.exe
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\bin\Debug\net6.0-windows\ScrcpyLauncher.deps.json
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\bin\Debug\net6.0-windows\ScrcpyLauncher.runtimeconfig.json
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\bin\Debug\net6.0-windows\ScrcpyLauncher.dll
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\bin\Debug\net6.0-windows\ScrcpyLauncher.pdb
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.csproj.AssemblyReference.cache
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Dashboard.resources
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Properties.Resources.resources
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.csproj.GenerateResource.cache
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.AssemblyInfoInputs.cache
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.AssemblyInfo.cs
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.dll
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\refint\ScrcpyLauncher.dll
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.pdb
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.genruntimeconfig.cache
+C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ref\ScrcpyLauncher.dll
+C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Signup.resources

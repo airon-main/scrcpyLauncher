@@ -1,20 +1,10 @@
 namespace ScrcpyLauncher
 {
-    public partial class Dashboard : Form
+    public partial class Signup : Form
     {
-        public Dashboard()
+        public Signup()
         {
             InitializeComponent();
-            deviceLabel.Text = "No Device Connected";
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, sideBarPanel.ClientRectangle,
-               ColorTranslator.FromHtml("#d3ded9"), 0, ButtonBorderStyle.Solid, // left
-               ColorTranslator.FromHtml("#d3ded9"), 0, ButtonBorderStyle.Solid, // top
-               ColorTranslator.FromHtml("#d3ded9"), 1, ButtonBorderStyle.Solid, // right
-               ColorTranslator.FromHtml("#d3ded9"), 0, ButtonBorderStyle.Solid);// bottom
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -48,6 +38,11 @@ namespace ScrcpyLauncher
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboardBtn_Click(object sender, EventArgs e)
         {
 
         }

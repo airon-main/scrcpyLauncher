@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Files\\Projects\\Desktop App Projects\\ScrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj": {}
+    "C:\\Users\\Aaron\\source\\repos\\scrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj": {}
   },
   "projects": {
-    "C:\\Files\\Projects\\Desktop App Projects\\ScrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj": {
+    "C:\\Users\\Aaron\\source\\repos\\scrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Files\\Projects\\Desktop App Projects\\ScrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\source\\repos\\scrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj",
         "projectName": "ScrcpyLauncher",
-        "projectPath": "C:\\Files\\Projects\\Desktop App Projects\\ScrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj",
+        "projectPath": "C:\\Users\\Aaron\\source\\repos\\scrcpyLauncher\\ScrcpyLauncher\\ScrcpyLauncher.csproj",
         "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Files\\Projects\\Desktop App Projects\\ScrcpyLauncher\\ScrcpyLauncher\\obj\\",
+        "outputPath": "C:\\Users\\Aaron\\source\\repos\\scrcpyLauncher\\ScrcpyLauncher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
