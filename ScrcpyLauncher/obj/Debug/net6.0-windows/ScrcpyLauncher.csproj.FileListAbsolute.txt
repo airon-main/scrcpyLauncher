@@ -35,3 +35,4 @@ C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windo
 C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.genruntimeconfig.cache
 C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ref\ScrcpyLauncher.dll
 C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Signup.resources
+C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Login.resources

@@ -9,7 +9,7 @@ namespace ScrcpyLauncher
 
         private void close_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void close_MouseEnter(object sender, EventArgs e)
@@ -42,9 +42,11 @@ namespace ScrcpyLauncher
 
         }
 
-        private void dashboardBtn_Click(object sender, EventArgs e)
+        private void signupBtn_Click(object sender, EventArgs e)
         {
-
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }
