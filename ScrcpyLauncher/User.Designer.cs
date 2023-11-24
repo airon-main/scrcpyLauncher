@@ -49,13 +49,13 @@
             copyrightLabel = new Label();
             contentPanel = new Panel();
             panel1 = new Panel();
+            signupBtn = new Button();
+            textBoxPassword = new TextBox();
+            label4 = new Label();
+            textBoxUsername = new TextBox();
+            label3 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            signupBtn = new Button();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -341,9 +341,9 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(signupBtn);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBoxPassword);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(textBoxUsername);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox2);
@@ -352,6 +352,66 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(977, 202);
             panel1.TabIndex = 3;
+            // 
+            // signupBtn
+            // 
+            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            signupBtn.BackColor = Color.FromArgb(136, 136, 136);
+            signupBtn.FlatAppearance.BorderSize = 0;
+            signupBtn.FlatStyle = FlatStyle.Flat;
+            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            signupBtn.ForeColor = Color.White;
+            signupBtn.Location = new Point(20, 143);
+            signupBtn.Margin = new Padding(0);
+            signupBtn.Name = "signupBtn";
+            signupBtn.Size = new Size(937, 41);
+            signupBtn.TabIndex = 29;
+            signupBtn.Text = "Logout";
+            signupBtn.UseVisualStyleBackColor = false;
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.Location = new Point(130, 100);
+            textBoxPassword.Margin = new Padding(20);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.ReadOnly = true;
+            textBoxPassword.Size = new Size(827, 23);
+            textBoxPassword.TabIndex = 28;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(20, 103);
+            label4.Margin = new Padding(0);
+            label4.Name = "label4";
+            label4.Size = new Size(64, 15);
+            label4.TabIndex = 27;
+            label4.Text = "Password";
+            // 
+            // textBoxUsername
+            // 
+            textBoxUsername.Location = new Point(130, 61);
+            textBoxUsername.Margin = new Padding(20);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.ReadOnly = true;
+            textBoxUsername.Size = new Size(827, 23);
+            textBoxUsername.TabIndex = 26;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(20, 64);
+            label3.Margin = new Padding(0);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 15);
+            label3.TabIndex = 25;
+            label3.Text = "Username";
             // 
             // label2
             // 
@@ -376,66 +436,6 @@
             pictureBox2.Size = new Size(24, 24);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(130, 100);
-            textBox2.Margin = new Padding(20);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(827, 23);
-            textBox2.TabIndex = 28;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.White;
-            label4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(20, 103);
-            label4.Margin = new Padding(0);
-            label4.Name = "label4";
-            label4.Size = new Size(64, 15);
-            label4.TabIndex = 27;
-            label4.Text = "Password";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(130, 61);
-            textBox1.Margin = new Padding(20);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(827, 23);
-            textBox1.TabIndex = 26;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(20, 64);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(65, 15);
-            label3.TabIndex = 25;
-            label3.Text = "Username";
-            // 
-            // signupBtn
-            // 
-            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            signupBtn.BackColor = Color.FromArgb(136, 136, 136);
-            signupBtn.FlatAppearance.BorderSize = 0;
-            signupBtn.FlatStyle = FlatStyle.Flat;
-            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(20, 143);
-            signupBtn.Margin = new Padding(0);
-            signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(937, 41);
-            signupBtn.TabIndex = 29;
-            signupBtn.Text = "Logout";
-            signupBtn.UseVisualStyleBackColor = false;
             // 
             // User
             // 
@@ -494,9 +494,9 @@
         private Panel panel1;
         private Label label2;
         private PictureBox pictureBox2;
-        private TextBox textBox2;
+        private TextBox textBoxPassword;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox textBoxUsername;
         private Label label3;
         private Button signupBtn;
     }

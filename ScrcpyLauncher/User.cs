@@ -6,6 +6,8 @@ namespace ScrcpyLauncher
         {
             InitializeComponent();
             deviceLabel.Text = "No Device Connected";
+            textBoxUsername.Text = UserData.UserName;
+            textBoxPassword.Text = UserData.Password;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

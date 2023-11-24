@@ -42,11 +42,32 @@ namespace ScrcpyLauncher
 
         }
 
-        private void signupBtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard(); 
-            dashboard.Show();
+            Signup signup = new Signup();
+            signup.Show();
             this.Hide();
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            if(textBoxUsername.Text != "" || textBoxPassword.Text != "")
+            {
+                if (textBoxUsername.Text == UserData.UserName && textBoxPassword.Text == UserData.Password)
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Username atau Password Salah", "Warning!", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Isi data yang dibutuhkan", "Warning!", MessageBoxButtons.OK);
+            }
         }
     }
 }

@@ -44,6 +44,28 @@ namespace ScrcpyLauncher
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
+            if (textBoxUsername.Text != "" || textBoxPassword.Text != "")
+            {
+                if (textBoxPassword.Text == textBoxReenterPassword.Text)
+                {
+                    UserData.UserName = textBoxUsername.Text;
+                    UserData.Password = textBoxPassword.Text;
+                    Login login = new Login();
+                    login.Show();
+                    this.Hide();
+                } else {
+                    DialogResult dialogResult = MessageBox.Show("Confirm password berbeda", "Warning!", MessageBoxButtons.OK);
+                }
+            } else {
+                DialogResult dialogResult = MessageBox.Show("Isi data yang dibutuhkan", "Warning!", MessageBoxButtons.OK);
+            }
+            //Login login = new Login();
+            //login.Show();
+            //this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             Login login = new Login();
             login.Show();
             this.Hide();

@@ -37,14 +37,15 @@
             footerPanel = new Panel();
             copyrightLabel = new Label();
             contentPanel = new Panel();
-            textBox2 = new TextBox();
+            button1 = new Button();
+            textBoxPassword = new TextBox();
             label4 = new Label();
-            textBox1 = new TextBox();
+            textBoxUsername = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            signupBtn = new Button();
+            loginBtn = new Button();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -150,26 +151,45 @@
             // contentPanel
             // 
             contentPanel.BackColor = Color.FromArgb(235, 247, 241);
-            contentPanel.Controls.Add(textBox2);
+            contentPanel.Controls.Add(button1);
+            contentPanel.Controls.Add(textBoxPassword);
             contentPanel.Controls.Add(label4);
-            contentPanel.Controls.Add(textBox1);
+            contentPanel.Controls.Add(textBoxUsername);
             contentPanel.Controls.Add(label3);
             contentPanel.Controls.Add(label2);
             contentPanel.Controls.Add(label1);
             contentPanel.Controls.Add(pictureBox1);
-            contentPanel.Controls.Add(signupBtn);
+            contentPanel.Controls.Add(loginBtn);
             contentPanel.Dock = DockStyle.Fill;
             contentPanel.Location = new Point(0, 33);
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(1280, 654);
             contentPanel.TabIndex = 4;
             // 
-            // textBox2
+            // button1
             // 
-            textBox2.Location = new Point(524, 332);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(342, 23);
-            textBox2.TabIndex = 24;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(136, 136, 136);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(414, 432);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(452, 41);
+            button1.TabIndex = 26;
+            button1.Text = "Signup";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.Location = new Point(524, 332);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '*';
+            textBoxPassword.Size = new Size(342, 23);
+            textBoxPassword.TabIndex = 24;
             // 
             // label4
             // 
@@ -184,12 +204,12 @@
             label4.TabIndex = 23;
             label4.Text = "Password";
             // 
-            // textBox1
+            // textBoxUsername
             // 
-            textBox1.Location = new Point(524, 293);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(342, 23);
-            textBox1.TabIndex = 22;
+            textBoxUsername.Location = new Point(524, 293);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(342, 23);
+            textBoxUsername.TabIndex = 22;
             // 
             // label3
             // 
@@ -241,22 +261,22 @@
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
-            // signupBtn
+            // loginBtn
             // 
-            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            signupBtn.BackColor = Color.FromArgb(48, 221, 129);
-            signupBtn.FlatAppearance.BorderSize = 0;
-            signupBtn.FlatStyle = FlatStyle.Flat;
-            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(414, 379);
-            signupBtn.Margin = new Padding(0);
-            signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(452, 41);
-            signupBtn.TabIndex = 25;
-            signupBtn.Text = "Login";
-            signupBtn.UseVisualStyleBackColor = false;
-            signupBtn.Click += signupBtn_Click;
+            loginBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            loginBtn.BackColor = Color.FromArgb(48, 221, 129);
+            loginBtn.FlatAppearance.BorderSize = 0;
+            loginBtn.FlatStyle = FlatStyle.Flat;
+            loginBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            loginBtn.ForeColor = Color.White;
+            loginBtn.Location = new Point(414, 373);
+            loginBtn.Margin = new Padding(0);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(452, 41);
+            loginBtn.TabIndex = 25;
+            loginBtn.Text = "Login";
+            loginBtn.UseVisualStyleBackColor = false;
+            loginBtn.Click += loginBtn_Click;
             // 
             // Login
             // 
@@ -294,13 +314,14 @@
         private PictureBox close;
         private Label copyrightLabel;
         private Panel contentPanel;
-        private TextBox textBox2;
+        private TextBox textBoxPassword;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox textBoxUsername;
         private Label label3;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button signupBtn;
+        private Button loginBtn;
+        private Button button1;
     }
 }
