@@ -1,8 +1,8 @@
 namespace ScrcpyLauncher
 {
-    public partial class Dashboard : Form
+    public partial class Settings : Form
     {
-        public Dashboard()
+        public Settings()
         {
             InitializeComponent();
             deviceLabel.Text = "No Device Connected";
@@ -52,17 +52,17 @@ namespace ScrcpyLauncher
 
         }
 
+        private void dashboardBtn_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
         private void devicesBtn_Click(object sender, EventArgs e)
         {
             Devices devices = new Devices();
             devices.Show();
-            this.Hide();
-        }
-
-        private void settingsBtn_Click(object sender, EventArgs e)
-        {
-            Settings settings = new Settings();
-            settings.Show();
             this.Hide();
         }
 

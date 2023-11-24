@@ -1,6 +1,6 @@
 ﻿namespace ScrcpyLauncher
 {
-    partial class Dashboard
+    partial class Settings
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             windowDecorationPanel = new Panel();
             minimize = new PictureBox();
             maximize = new PictureBox();
@@ -48,18 +48,6 @@
             deviceLabel = new Label();
             copyrightLabel = new Label();
             contentPanel = new Panel();
-            panel3 = new Panel();
-            label5 = new Label();
-            pictureBox5 = new PictureBox();
-            textBox1 = new TextBox();
-            label4 = new Label();
-            signupBtn = new Button();
-            panel2 = new Panel();
-            pictureBox4 = new PictureBox();
-            label3 = new Label();
-            pictureBox3 = new PictureBox();
-            panel1 = new Panel();
-            richTextBox1 = new RichTextBox();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             windowDecorationPanel.SuspendLayout();
@@ -71,12 +59,6 @@
             topNavPanel.SuspendLayout();
             footerPanel.SuspendLayout();
             contentPanel.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -185,11 +167,11 @@
             // settingsBtn
             // 
             settingsBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            settingsBtn.BackColor = Color.White;
+            settingsBtn.BackColor = Color.FromArgb(48, 221, 129);
             settingsBtn.FlatAppearance.BorderSize = 0;
             settingsBtn.FlatStyle = FlatStyle.Flat;
             settingsBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            settingsBtn.ForeColor = Color.FromArgb(136, 136, 136);
+            settingsBtn.ForeColor = Color.White;
             settingsBtn.Location = new Point(0, 196);
             settingsBtn.Margin = new Padding(0);
             settingsBtn.Name = "settingsBtn";
@@ -197,7 +179,6 @@
             settingsBtn.TabIndex = 4;
             settingsBtn.Text = "Settings";
             settingsBtn.UseVisualStyleBackColor = false;
-            settingsBtn.Click += settingsBtn_Click;
             // 
             // devicesBtn
             // 
@@ -219,11 +200,11 @@
             // dashboardBtn
             // 
             dashboardBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            dashboardBtn.BackColor = Color.FromArgb(48, 221, 129);
+            dashboardBtn.BackColor = Color.White;
             dashboardBtn.FlatAppearance.BorderSize = 0;
             dashboardBtn.FlatStyle = FlatStyle.Flat;
             dashboardBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            dashboardBtn.ForeColor = Color.White;
+            dashboardBtn.ForeColor = Color.FromArgb(136, 136, 136);
             dashboardBtn.Location = new Point(0, 96);
             dashboardBtn.Margin = new Padding(0);
             dashboardBtn.Name = "dashboardBtn";
@@ -231,6 +212,7 @@
             dashboardBtn.TabIndex = 2;
             dashboardBtn.Text = "Dashboard";
             dashboardBtn.UseVisualStyleBackColor = false;
+            dashboardBtn.Click += dashboardBtn_Click;
             // 
             // label1
             // 
@@ -341,184 +323,39 @@
             // contentPanel
             // 
             contentPanel.BackColor = Color.FromArgb(235, 247, 241);
-            contentPanel.Controls.Add(panel3);
-            contentPanel.Controls.Add(panel2);
-            contentPanel.Controls.Add(panel1);
+            contentPanel.Controls.Add(label2);
+            contentPanel.Controls.Add(pictureBox2);
             contentPanel.Dock = DockStyle.Fill;
             contentPanel.Location = new Point(200, 93);
-            contentPanel.Margin = new Padding(0);
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(1080, 594);
             contentPanel.TabIndex = 4;
             // 
-            // panel3
-            // 
-            panel3.BackColor = Color.White;
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(pictureBox5);
-            panel3.Controls.Add(textBox1);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(signupBtn);
-            panel3.Location = new Point(53, 300);
-            panel3.Margin = new Padding(50, 20, 20, 20);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(977, 161);
-            panel3.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.White;
-            label5.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(49, 25);
-            label5.Margin = new Padding(0);
-            label5.Name = "label5";
-            label5.Size = new Size(71, 15);
-            label5.TabIndex = 30;
-            label5.Text = "Add Device";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
-            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(20, 20);
-            pictureBox5.Margin = new Padding(20);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(24, 24);
-            pictureBox5.TabIndex = 29;
-            pictureBox5.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(130, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(827, 23);
-            textBox1.TabIndex = 27;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.White;
-            label4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(20, 61);
-            label4.Margin = new Padding(20);
-            label4.Name = "label4";
-            label4.Size = new Size(83, 15);
-            label4.TabIndex = 26;
-            label4.Text = "Device Name";
-            // 
-            // signupBtn
-            // 
-            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            signupBtn.BackColor = Color.FromArgb(48, 221, 129);
-            signupBtn.FlatAppearance.BorderSize = 0;
-            signupBtn.FlatStyle = FlatStyle.Flat;
-            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(20, 99);
-            signupBtn.Margin = new Padding(0);
-            signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(937, 41);
-            signupBtn.TabIndex = 28;
-            signupBtn.Text = "Login";
-            signupBtn.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(pictureBox4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(pictureBox3);
-            panel2.Location = new Point(559, 60);
-            panel2.Margin = new Padding(50, 50, 50, 20);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(471, 200);
-            panel2.TabIndex = 1;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(20, 60);
-            pictureBox4.Margin = new Padding(20);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(431, 120);
-            pictureBox4.TabIndex = 5;
-            pictureBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(49, 25);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(204, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Connection Speed (Not Functional)";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(20, 20);
-            pictureBox3.Margin = new Padding(20);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(24, 24);
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(richTextBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(53, 60);
-            panel1.Margin = new Padding(50, 50, 20, 20);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(471, 200);
-            panel1.TabIndex = 0;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            richTextBox1.Location = new Point(20, 60);
-            richTextBox1.Margin = new Padding(20);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(431, 120);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
+            label2.BackColor = Color.FromArgb(235, 247, 241);
             label2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(49, 25);
+            label2.Location = new Point(491, 290);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
-            label2.Size = new Size(53, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Devices";
+            label2.Size = new Size(161, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Feature Under Construction";
             // 
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(20, 20);
+            pictureBox2.Location = new Point(462, 285);
             pictureBox2.Margin = new Padding(20);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(24, 24);
-            pictureBox2.TabIndex = 1;
+            pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // Dashboard
+            // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -529,7 +366,7 @@
             Controls.Add(sideBarPanel);
             Controls.Add(windowDecorationPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Dashboard";
+            Name = "Settings";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Dashboard_Load;
@@ -545,15 +382,7 @@
             footerPanel.ResumeLayout(false);
             footerPanel.PerformLayout();
             contentPanel.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            contentPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -579,19 +408,7 @@
         private Button userBtn;
         private Button settingsBtn;
         private Button devicesBtn;
-        private Panel panel1;
-        private Panel panel3;
-        private Panel panel2;
-        private Label label3;
-        private PictureBox pictureBox3;
         private Label label2;
         private PictureBox pictureBox2;
-        private RichTextBox richTextBox1;
-        private PictureBox pictureBox4;
-        private TextBox textBox1;
-        private Label label4;
-        private Button signupBtn;
-        private Label label5;
-        private PictureBox pictureBox5;
     }
 }
