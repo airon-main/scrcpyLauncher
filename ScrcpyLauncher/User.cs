@@ -63,7 +63,7 @@ namespace ScrcpyLauncher
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
+            Credits settings = new Credits();
             settings.Show();
             this.Hide();
         }
@@ -77,16 +77,33 @@ namespace ScrcpyLauncher
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
-            UserData.UserName = "";
-            UserData.Password = "";
-            Signup signup = new Signup();
-            signup.Show();
-            this.Hide();
+            DialogResult dialogResult = MessageBox.Show("Anda yakin ingin Logout?", "Warning!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                UserData.UserName = "";
+                UserData.Password = "";
+                DevicesData.Devices.Clear();
+                Signup signup = new Signup();
+                signup.Show();
+                this.Hide();
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             textBoxPassword.PasswordChar = checkBoxShowPassword.Checked ? '\0' : '*';
+        }
+
+        private void confirmEditBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Anda yakin ingin mengubah data?", "Warning!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                UserData.UserName = textBoxUsername.Text;
+                UserData.Password = textBoxPassword.Text;
+                textBoxUsername.Text = UserData.UserName;
+                textBoxPassword.Text = UserData.Password;
+            }
         }
     }
 }

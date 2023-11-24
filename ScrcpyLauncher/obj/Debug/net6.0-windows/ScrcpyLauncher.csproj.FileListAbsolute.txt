@@ -37,5 +37,5 @@ C:\Users\Aaron\Source\Repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windo
 C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Signup.resources
 C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Login.resources
 C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Devices.resources
-C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Settings.resources
 C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.User.resources
+C:\Users\Aaron\source\repos\scrcpyLauncher\ScrcpyLauncher\obj\Debug\net6.0-windows\ScrcpyLauncher.Credits.resources

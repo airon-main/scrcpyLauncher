@@ -42,7 +42,7 @@ namespace ScrcpyLauncher
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void signupBtn_Click(object sender, EventArgs e)
         {
             Signup signup = new Signup();
             signup.Show();
@@ -51,7 +51,7 @@ namespace ScrcpyLauncher
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if(textBoxUsername.Text != "" || textBoxPassword.Text != "")
+            if (textBoxUsername.Text != "" || textBoxPassword.Text != "")
             {
                 if (textBoxUsername.Text == UserData.UserName && textBoxPassword.Text == UserData.Password)
                 {
@@ -61,7 +61,12 @@ namespace ScrcpyLauncher
                 }
                 else
                 {
-                    DialogResult dialogResult = MessageBox.Show("Username atau Password Salah", "Warning!", MessageBoxButtons.OK);
+                    DialogResult dialogResult = MessageBox.Show("Username atau Password Salah, maukah anda menghapus yang sudah anda masukkan?", "Warning!", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        textBoxUsername.Text = "";
+                        textBoxPassword.Text = "";
+                    }
                 }
             }
             else

@@ -6,6 +6,8 @@ namespace ScrcpyLauncher
         {
             InitializeComponent();
             deviceLabel.Text = "No Device Connected";
+            string combinedDevices = string.Join("\n", DevicesData.Devices);
+            richTextBoxDevicesList.Text = combinedDevices;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -61,7 +63,7 @@ namespace ScrcpyLauncher
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
+            Credits settings = new Credits();
             settings.Show();
             this.Hide();
         }
@@ -71,6 +73,32 @@ namespace ScrcpyLauncher
             User user = new User();
             user.Show();
             this.Hide();
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Anda yakin ingin menghapus semua data?", "Warning!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                DevicesData.Devices.Clear();
+                string combinedDevices = string.Join("\n", DevicesData.Devices);
+                richTextBoxDevicesList.Text = combinedDevices;
+            }
+        }
+
+        private void addDeviceBtn_Click(object sender, EventArgs e)
+        {
+            if (textBoxDeviceName.Text != "")
+            {
+                DevicesData.Devices.Add(textBoxDeviceName.Text);
+                textBoxDeviceName.Text = string.Empty;
+                string combinedDevices = string.Join("\n", DevicesData.Devices);
+                richTextBoxDevicesList.Text = combinedDevices;
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Isi data yang dibutuhkan", "Warning!", MessageBoxButtons.OK);
+            }
         }
     }
 }

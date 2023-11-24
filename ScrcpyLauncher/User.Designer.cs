@@ -49,6 +49,8 @@
             copyrightLabel = new Label();
             contentPanel = new Panel();
             panel1 = new Panel();
+            confirmEditBtn = new Button();
+            checkBoxShowPassword = new CheckBox();
             logoutBtn = new Button();
             textBoxPassword = new TextBox();
             label4 = new Label();
@@ -56,7 +58,6 @@
             label3 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            checkBoxShowPassword = new CheckBox();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -184,7 +185,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Settings";
+            settingsBtn.Text = "Credits";
             settingsBtn.UseVisualStyleBackColor = false;
             settingsBtn.Click += settingsBtn_Click;
             // 
@@ -341,6 +342,7 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(confirmEditBtn);
             panel1.Controls.Add(checkBoxShowPassword);
             panel1.Controls.Add(logoutBtn);
             panel1.Controls.Add(textBoxPassword);
@@ -350,21 +352,49 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox2);
             panel1.Location = new Point(53, 60);
-            panel1.Margin = new Padding(50, 50, 20, 20);
+            panel1.Margin = new Padding(50);
             panel1.Name = "panel1";
-            panel1.Size = new Size(977, 202);
+            panel1.Size = new Size(977, 484);
             panel1.TabIndex = 3;
+            // 
+            // confirmEditBtn
+            // 
+            confirmEditBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            confirmEditBtn.BackColor = Color.FromArgb(136, 136, 136);
+            confirmEditBtn.FlatAppearance.BorderSize = 0;
+            confirmEditBtn.FlatStyle = FlatStyle.Flat;
+            confirmEditBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            confirmEditBtn.ForeColor = Color.White;
+            confirmEditBtn.Location = new Point(20, 139);
+            confirmEditBtn.Margin = new Padding(0);
+            confirmEditBtn.Name = "confirmEditBtn";
+            confirmEditBtn.Size = new Size(937, 41);
+            confirmEditBtn.TabIndex = 31;
+            confirmEditBtn.Text = "Confirm Edit";
+            confirmEditBtn.UseVisualStyleBackColor = false;
+            confirmEditBtn.Click += confirmEditBtn_Click;
+            // 
+            // checkBoxShowPassword
+            // 
+            checkBoxShowPassword.AutoSize = true;
+            checkBoxShowPassword.Location = new Point(887, 102);
+            checkBoxShowPassword.Name = "checkBoxShowPassword";
+            checkBoxShowPassword.Size = new Size(70, 19);
+            checkBoxShowPassword.TabIndex = 30;
+            checkBoxShowPassword.Text = "Visibility";
+            checkBoxShowPassword.UseVisualStyleBackColor = true;
+            checkBoxShowPassword.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // logoutBtn
             // 
             logoutBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            logoutBtn.BackColor = Color.FromArgb(136, 136, 136);
+            logoutBtn.BackColor = Color.Red;
             logoutBtn.FlatAppearance.BorderSize = 0;
             logoutBtn.FlatStyle = FlatStyle.Flat;
             logoutBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             logoutBtn.ForeColor = Color.White;
-            logoutBtn.Location = new Point(20, 143);
-            logoutBtn.Margin = new Padding(0);
+            logoutBtn.Location = new Point(20, 423);
+            logoutBtn.Margin = new Padding(20);
             logoutBtn.Name = "logoutBtn";
             logoutBtn.Size = new Size(937, 41);
             logoutBtn.TabIndex = 29;
@@ -377,7 +407,6 @@
             textBoxPassword.Location = new Point(130, 100);
             textBoxPassword.Margin = new Padding(20);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.ReadOnly = true;
             textBoxPassword.Size = new Size(748, 23);
             textBoxPassword.TabIndex = 28;
             // 
@@ -399,7 +428,6 @@
             textBoxUsername.Location = new Point(130, 61);
             textBoxUsername.Margin = new Padding(20);
             textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.ReadOnly = true;
             textBoxUsername.Size = new Size(827, 23);
             textBoxUsername.TabIndex = 26;
             // 
@@ -439,17 +467,6 @@
             pictureBox2.Size = new Size(24, 24);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
-            // 
-            // checkBoxShowPassword
-            // 
-            checkBoxShowPassword.AutoSize = true;
-            checkBoxShowPassword.Location = new Point(887, 102);
-            checkBoxShowPassword.Name = "checkBoxShowPassword";
-            checkBoxShowPassword.Size = new Size(70, 19);
-            checkBoxShowPassword.TabIndex = 30;
-            checkBoxShowPassword.Text = "Visibility";
-            checkBoxShowPassword.UseVisualStyleBackColor = true;
-            checkBoxShowPassword.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // User
             // 
@@ -514,5 +531,6 @@
         private Label label3;
         private Button logoutBtn;
         private CheckBox checkBoxShowPassword;
+        private Button confirmEditBtn;
     }
 }

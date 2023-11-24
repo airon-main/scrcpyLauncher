@@ -31,5 +31,39 @@ namespace ScrcpyLauncher
             card = ColorTranslator.FromHtml("#f2f2f2");
             text = ColorTranslator.FromHtml("#000000");
         }
+
+
+        public void setColor(Control control)
+        {
+            switch (control.Tag)
+            {
+                case "primary":
+                    control.BackColor = ColorPalette.primary;
+                    break;
+                case "secondary":
+                    control.BackColor = ColorPalette.secondary;
+                    break;
+                case "disabled":
+                    control.BackColor = ColorPalette.disabled;
+                    break;
+                case "background":
+                    control.BackColor = ColorPalette.background;
+                    break;
+                case "carddark":
+                    control.BackColor = ColorPalette.carddark;
+                    break;
+                case "card":
+                    control.BackColor = ColorPalette.card;
+                    break;
+                case "text":
+                    control.ForeColor = ColorPalette.text;
+                    break;
+            }
+            foreach (Control child in control.Controls)
+            {
+                setColor(child);
+            }
+        }
+
     }
 }

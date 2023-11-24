@@ -51,15 +51,15 @@
             panel3 = new Panel();
             label5 = new Label();
             pictureBox5 = new PictureBox();
-            textBox1 = new TextBox();
+            textBoxDeviceName = new TextBox();
             label4 = new Label();
-            signupBtn = new Button();
+            addDeviceBtn = new Button();
             panel2 = new Panel();
             pictureBox4 = new PictureBox();
             label3 = new Label();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
-            richTextBox1 = new RichTextBox();
+            richTextBoxDevicesList = new RichTextBox();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             windowDecorationPanel.SuspendLayout();
@@ -195,7 +195,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Settings";
+            settingsBtn.Text = "Credits";
             settingsBtn.UseVisualStyleBackColor = false;
             settingsBtn.Click += settingsBtn_Click;
             // 
@@ -356,9 +356,9 @@
             panel3.BackColor = Color.White;
             panel3.Controls.Add(label5);
             panel3.Controls.Add(pictureBox5);
-            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(textBoxDeviceName);
             panel3.Controls.Add(label4);
-            panel3.Controls.Add(signupBtn);
+            panel3.Controls.Add(addDeviceBtn);
             panel3.Location = new Point(53, 300);
             panel3.Margin = new Padding(50, 20, 20, 20);
             panel3.Name = "panel3";
@@ -389,12 +389,12 @@
             pictureBox5.TabIndex = 29;
             pictureBox5.TabStop = false;
             // 
-            // textBox1
+            // textBoxDeviceName
             // 
-            textBox1.Location = new Point(130, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(827, 23);
-            textBox1.TabIndex = 27;
+            textBoxDeviceName.Location = new Point(130, 58);
+            textBoxDeviceName.Name = "textBoxDeviceName";
+            textBoxDeviceName.Size = new Size(827, 23);
+            textBoxDeviceName.TabIndex = 27;
             // 
             // label4
             // 
@@ -409,21 +409,22 @@
             label4.TabIndex = 26;
             label4.Text = "Device Name";
             // 
-            // signupBtn
+            // addDeviceBtn
             // 
-            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            signupBtn.BackColor = Color.FromArgb(48, 221, 129);
-            signupBtn.FlatAppearance.BorderSize = 0;
-            signupBtn.FlatStyle = FlatStyle.Flat;
-            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(20, 99);
-            signupBtn.Margin = new Padding(0);
-            signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(937, 41);
-            signupBtn.TabIndex = 28;
-            signupBtn.Text = "Login";
-            signupBtn.UseVisualStyleBackColor = false;
+            addDeviceBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            addDeviceBtn.BackColor = Color.FromArgb(48, 221, 129);
+            addDeviceBtn.FlatAppearance.BorderSize = 0;
+            addDeviceBtn.FlatStyle = FlatStyle.Flat;
+            addDeviceBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            addDeviceBtn.ForeColor = Color.White;
+            addDeviceBtn.Location = new Point(20, 99);
+            addDeviceBtn.Margin = new Padding(0);
+            addDeviceBtn.Name = "addDeviceBtn";
+            addDeviceBtn.Size = new Size(937, 41);
+            addDeviceBtn.TabIndex = 28;
+            addDeviceBtn.Text = "Add";
+            addDeviceBtn.UseVisualStyleBackColor = false;
+            addDeviceBtn.Click += addDeviceBtn_Click;
             // 
             // panel2
             // 
@@ -475,7 +476,7 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(richTextBox1);
+            panel1.Controls.Add(richTextBoxDevicesList);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox2);
             panel1.Location = new Point(53, 60);
@@ -484,16 +485,16 @@
             panel1.Size = new Size(471, 200);
             panel1.TabIndex = 0;
             // 
-            // richTextBox1
+            // richTextBoxDevicesList
             // 
-            richTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            richTextBox1.Location = new Point(20, 60);
-            richTextBox1.Margin = new Padding(20);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(431, 120);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            richTextBoxDevicesList.BorderStyle = BorderStyle.FixedSingle;
+            richTextBoxDevicesList.Location = new Point(20, 60);
+            richTextBoxDevicesList.Margin = new Padding(20);
+            richTextBoxDevicesList.Name = "richTextBoxDevicesList";
+            richTextBoxDevicesList.ReadOnly = true;
+            richTextBoxDevicesList.Size = new Size(431, 120);
+            richTextBoxDevicesList.TabIndex = 3;
+            richTextBoxDevicesList.Text = "";
             // 
             // label2
             // 
@@ -587,11 +588,11 @@
         private PictureBox pictureBox3;
         private Label label2;
         private PictureBox pictureBox2;
-        private RichTextBox richTextBox1;
+        private RichTextBox richTextBoxDevicesList;
         private PictureBox pictureBox4;
-        private TextBox textBox1;
+        private TextBox textBoxDeviceName;
         private Label label4;
-        private Button signupBtn;
+        private Button addDeviceBtn;
         private Label label5;
         private PictureBox pictureBox5;
     }

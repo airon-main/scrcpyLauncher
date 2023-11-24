@@ -1,6 +1,6 @@
 ﻿namespace ScrcpyLauncher
 {
-    partial class Settings
+    partial class Credits
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credits));
             windowDecorationPanel = new Panel();
             minimize = new PictureBox();
             maximize = new PictureBox();
@@ -48,8 +48,6 @@
             deviceLabel = new Label();
             copyrightLabel = new Label();
             contentPanel = new Panel();
-            label2 = new Label();
-            pictureBox2 = new PictureBox();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -58,8 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             topNavPanel.SuspendLayout();
             footerPanel.SuspendLayout();
-            contentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // windowDecorationPanel
@@ -177,7 +173,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Settings";
+            settingsBtn.Text = "Credits";
             settingsBtn.UseVisualStyleBackColor = false;
             // 
             // devicesBtn
@@ -323,39 +319,13 @@
             // contentPanel
             // 
             contentPanel.BackColor = Color.FromArgb(235, 247, 241);
-            contentPanel.Controls.Add(label2);
-            contentPanel.Controls.Add(pictureBox2);
             contentPanel.Dock = DockStyle.Fill;
             contentPanel.Location = new Point(200, 93);
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(1080, 594);
             contentPanel.TabIndex = 4;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(235, 247, 241);
-            label2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(491, 290);
-            label2.Margin = new Padding(0);
-            label2.Name = "label2";
-            label2.Size = new Size(161, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Feature Under Construction";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(462, 285);
-            pictureBox2.Margin = new Padding(20);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(24, 24);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-            // 
-            // Settings
+            // Credits
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -366,7 +336,7 @@
             Controls.Add(sideBarPanel);
             Controls.Add(windowDecorationPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Settings";
+            Name = "Credits";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Dashboard_Load;
@@ -381,9 +351,6 @@
             topNavPanel.ResumeLayout(false);
             footerPanel.ResumeLayout(false);
             footerPanel.PerformLayout();
-            contentPanel.ResumeLayout(false);
-            contentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -408,7 +375,5 @@
         private Button userBtn;
         private Button settingsBtn;
         private Button devicesBtn;
-        private Label label2;
-        private PictureBox pictureBox2;
     }
 }

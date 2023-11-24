@@ -10,7 +10,7 @@
     <Compile Update="User.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Settings.cs">
+    <Compile Update="Credits.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Devices.cs">

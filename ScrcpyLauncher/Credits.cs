@@ -1,8 +1,8 @@
 namespace ScrcpyLauncher
 {
-    public partial class Settings : Form
+    public partial class Credits : Form
     {
-        public Settings()
+        public Credits()
         {
             InitializeComponent();
             deviceLabel.Text = "No Device Connected";
