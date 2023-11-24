@@ -74,5 +74,19 @@ namespace ScrcpyLauncher
             devices.Show();
             this.Hide();
         }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            UserData.UserName = "";
+            UserData.Password = "";
+            Signup signup = new Signup();
+            signup.Show();
+            this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxPassword.PasswordChar = checkBoxShowPassword.Checked ? '\0' : '*';
+        }
     }
 }

@@ -49,13 +49,14 @@
             copyrightLabel = new Label();
             contentPanel = new Panel();
             panel1 = new Panel();
-            signupBtn = new Button();
+            logoutBtn = new Button();
             textBoxPassword = new TextBox();
             label4 = new Label();
             textBoxUsername = new TextBox();
             label3 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
+            checkBoxShowPassword = new CheckBox();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -340,7 +341,8 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(signupBtn);
+            panel1.Controls.Add(checkBoxShowPassword);
+            panel1.Controls.Add(logoutBtn);
             panel1.Controls.Add(textBoxPassword);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(textBoxUsername);
@@ -353,21 +355,22 @@
             panel1.Size = new Size(977, 202);
             panel1.TabIndex = 3;
             // 
-            // signupBtn
+            // logoutBtn
             // 
-            signupBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            signupBtn.BackColor = Color.FromArgb(136, 136, 136);
-            signupBtn.FlatAppearance.BorderSize = 0;
-            signupBtn.FlatStyle = FlatStyle.Flat;
-            signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(20, 143);
-            signupBtn.Margin = new Padding(0);
-            signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(937, 41);
-            signupBtn.TabIndex = 29;
-            signupBtn.Text = "Logout";
-            signupBtn.UseVisualStyleBackColor = false;
+            logoutBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            logoutBtn.BackColor = Color.FromArgb(136, 136, 136);
+            logoutBtn.FlatAppearance.BorderSize = 0;
+            logoutBtn.FlatStyle = FlatStyle.Flat;
+            logoutBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            logoutBtn.ForeColor = Color.White;
+            logoutBtn.Location = new Point(20, 143);
+            logoutBtn.Margin = new Padding(0);
+            logoutBtn.Name = "logoutBtn";
+            logoutBtn.Size = new Size(937, 41);
+            logoutBtn.TabIndex = 29;
+            logoutBtn.Text = "Logout";
+            logoutBtn.UseVisualStyleBackColor = false;
+            logoutBtn.Click += logoutBtn_Click;
             // 
             // textBoxPassword
             // 
@@ -375,7 +378,7 @@
             textBoxPassword.Margin = new Padding(20);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.ReadOnly = true;
-            textBoxPassword.Size = new Size(827, 23);
+            textBoxPassword.Size = new Size(748, 23);
             textBoxPassword.TabIndex = 28;
             // 
             // label4
@@ -436,6 +439,17 @@
             pictureBox2.Size = new Size(24, 24);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            // 
+            // checkBoxShowPassword
+            // 
+            checkBoxShowPassword.AutoSize = true;
+            checkBoxShowPassword.Location = new Point(887, 102);
+            checkBoxShowPassword.Name = "checkBoxShowPassword";
+            checkBoxShowPassword.Size = new Size(70, 19);
+            checkBoxShowPassword.TabIndex = 30;
+            checkBoxShowPassword.Text = "Visibility";
+            checkBoxShowPassword.UseVisualStyleBackColor = true;
+            checkBoxShowPassword.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // User
             // 
@@ -498,6 +512,7 @@
         private Label label4;
         private TextBox textBoxUsername;
         private Label label3;
-        private Button signupBtn;
+        private Button logoutBtn;
+        private CheckBox checkBoxShowPassword;
     }
 }
