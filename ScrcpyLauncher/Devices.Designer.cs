@@ -434,6 +434,7 @@
             richTextBox1.Location = new Point(20, 60);
             richTextBox1.Margin = new Padding(20);
             richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
             richTextBox1.Size = new Size(937, 213);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";

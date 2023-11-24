@@ -37,24 +37,30 @@
             footerPanel = new Panel();
             copyrightLabel = new Label();
             contentPanel = new Panel();
-            button1 = new Button();
-            signupBtn = new Button();
-            textBoxReenterPassword = new TextBox();
-            label5 = new Label();
-            textBoxPassword = new TextBox();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            label6 = new Label();
             label4 = new Label();
+            panel3 = new Panel();
             textBoxUsername = new TextBox();
             label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            textBoxPassword = new TextBox();
+            panel1 = new Panel();
+            textBoxReenterPassword = new TextBox();
+            signupBtn = new Button();
+            button1 = new Button();
+            label5 = new Label();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)close).BeginInit();
             footerPanel.SuspendLayout();
             contentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // windowDecorationPanel
@@ -153,32 +159,163 @@
             // contentPanel
             // 
             contentPanel.BackColor = Color.FromArgb(235, 247, 241);
-            contentPanel.Controls.Add(button1);
+            contentPanel.Controls.Add(label1);
+            contentPanel.Controls.Add(pictureBox2);
+            contentPanel.Controls.Add(label6);
+            contentPanel.Controls.Add(label4);
+            contentPanel.Controls.Add(panel3);
+            contentPanel.Controls.Add(label3);
+            contentPanel.Controls.Add(panel2);
+            contentPanel.Controls.Add(panel1);
             contentPanel.Controls.Add(signupBtn);
-            contentPanel.Controls.Add(textBoxReenterPassword);
+            contentPanel.Controls.Add(button1);
             contentPanel.Controls.Add(label5);
             contentPanel.Dock = DockStyle.Fill;
             contentPanel.Location = new Point(0, 33);
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(1280, 654);
             contentPanel.TabIndex = 4;
+            contentPanel.Tag = "background";
             // 
-            // button1
+            // label1
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button1.BackColor = Color.FromArgb(136, 136, 136);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(414, 468);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Size = new Size(452, 41);
-            button1.TabIndex = 20;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(136, 136, 136);
+            label1.Location = new Point(549, 177);
+            label1.Margin = new Padding(0);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 37;
+            label1.Tag = "text";
+            label1.Text = "Welcome to";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(627, 165);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(36, 36);
+            pictureBox2.TabIndex = 36;
+            pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(7, 112, 99);
+            label6.Location = new Point(660, 171);
+            label6.Margin = new Padding(0);
+            label6.Name = "label6";
+            label6.Size = new Size(72, 23);
+            label6.TabIndex = 35;
+            label6.Tag = "";
+            label6.Text = "ScrCpy";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(216, 297);
+            label4.Margin = new Padding(0);
+            label4.Name = "label4";
+            label4.Size = new Size(64, 15);
+            label4.TabIndex = 26;
+            label4.Tag = "text";
+            label4.Text = "Password";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.White;
+            panel3.Controls.Add(textBoxUsername);
+            panel3.Location = new Point(344, 221);
+            panel3.Margin = new Padding(5);
+            panel3.Name = "panel3";
+            panel3.Padding = new Padding(6, 15, 6, 15);
+            panel3.Size = new Size(698, 46);
+            panel3.TabIndex = 34;
+            panel3.Tag = "card";
+            // 
+            // textBoxUsername
+            // 
+            textBoxUsername.BackColor = Color.White;
+            textBoxUsername.BorderStyle = BorderStyle.None;
+            textBoxUsername.Dock = DockStyle.Fill;
+            textBoxUsername.Location = new Point(6, 15);
+            textBoxUsername.Margin = new Padding(0);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(686, 16);
+            textBoxUsername.TabIndex = 25;
+            textBoxUsername.Tag = "card";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(215, 237);
+            label3.Margin = new Padding(0);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 15);
+            label3.TabIndex = 24;
+            label3.Tag = "text";
+            label3.Text = "Username";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(textBoxPassword);
+            panel2.Location = new Point(344, 277);
+            panel2.Margin = new Padding(5);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(6, 15, 6, 15);
+            panel2.Size = new Size(698, 46);
+            panel2.TabIndex = 33;
+            panel2.Tag = "card";
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.BackColor = Color.White;
+            textBoxPassword.BorderStyle = BorderStyle.None;
+            textBoxPassword.Dock = DockStyle.Fill;
+            textBoxPassword.Location = new Point(6, 15);
+            textBoxPassword.Margin = new Padding(0);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '*';
+            textBoxPassword.Size = new Size(686, 16);
+            textBoxPassword.TabIndex = 27;
+            textBoxPassword.Tag = "card";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(textBoxReenterPassword);
+            panel1.Location = new Point(344, 334);
+            panel1.Margin = new Padding(5);
+            panel1.Name = "panel1";
+            panel1.Padding = new Padding(6, 15, 6, 15);
+            panel1.Size = new Size(698, 46);
+            panel1.TabIndex = 32;
+            panel1.Tag = "card";
+            // 
+            // textBoxReenterPassword
+            // 
+            textBoxReenterPassword.BackColor = Color.White;
+            textBoxReenterPassword.BorderStyle = BorderStyle.None;
+            textBoxReenterPassword.Dock = DockStyle.Fill;
+            textBoxReenterPassword.Location = new Point(6, 15);
+            textBoxReenterPassword.Margin = new Padding(10, 10, 10, 0);
+            textBoxReenterPassword.Name = "textBoxReenterPassword";
+            textBoxReenterPassword.PasswordChar = '*';
+            textBoxReenterPassword.Size = new Size(686, 16);
+            textBoxReenterPassword.TabIndex = 30;
+            textBoxReenterPassword.Tag = "card";
             // 
             // signupBtn
             // 
@@ -188,126 +325,51 @@
             signupBtn.FlatStyle = FlatStyle.Flat;
             signupBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             signupBtn.ForeColor = Color.White;
-            signupBtn.Location = new Point(414, 409);
-            signupBtn.Margin = new Padding(0);
+            signupBtn.Location = new Point(216, 390);
+            signupBtn.Margin = new Padding(5);
             signupBtn.Name = "signupBtn";
-            signupBtn.Size = new Size(452, 41);
-            signupBtn.TabIndex = 17;
+            signupBtn.Size = new Size(826, 47);
+            signupBtn.TabIndex = 28;
             signupBtn.Text = "Signup";
             signupBtn.UseVisualStyleBackColor = false;
             signupBtn.Click += signupBtn_Click;
             // 
-            // textBoxReenterPassword
+            // button1
             // 
-            textBoxReenterPassword.Location = new Point(524, 368);
-            textBoxReenterPassword.Name = "textBoxReenterPassword";
-            textBoxReenterPassword.PasswordChar = '*';
-            textBoxReenterPassword.Size = new Size(342, 23);
-            textBoxReenterPassword.TabIndex = 19;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(136, 136, 136);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(216, 447);
+            button1.Margin = new Padding(5);
+            button1.Name = "button1";
+            button1.Size = new Size(826, 41);
+            button1.TabIndex = 31;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.FromArgb(235, 247, 241);
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(414, 371);
+            label5.Location = new Point(216, 354);
             label5.Margin = new Padding(0);
             label5.Name = "label5";
             label5.Size = new Size(111, 15);
-            label5.TabIndex = 18;
+            label5.TabIndex = 29;
+            label5.Tag = "text";
             label5.Text = "Reenter Password";
-            // 
-            // textBoxPassword
-            // 
-            textBoxPassword.Location = new Point(524, 362);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.PasswordChar = '*';
-            textBoxPassword.Size = new Size(342, 23);
-            textBoxPassword.TabIndex = 16;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.FromArgb(235, 247, 241);
-            label4.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(414, 365);
-            label4.Margin = new Padding(0);
-            label4.Name = "label4";
-            label4.Size = new Size(64, 15);
-            label4.TabIndex = 15;
-            label4.Text = "Password";
-            // 
-            // textBoxUsername
-            // 
-            textBoxUsername.Location = new Point(524, 323);
-            textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(342, 23);
-            textBoxUsername.TabIndex = 14;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(235, 247, 241);
-            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(414, 326);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(65, 15);
-            label3.TabIndex = 13;
-            label3.Text = "Username";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(235, 247, 241);
-            label2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(136, 136, 136);
-            label2.Location = new Point(549, 274);
-            label2.Margin = new Padding(0);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 15);
-            label2.TabIndex = 12;
-            label2.Text = "Welcome to";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(235, 247, 241);
-            label1.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(7, 112, 99);
-            label1.Location = new Point(660, 270);
-            label1.Margin = new Padding(0);
-            label1.Name = "label1";
-            label1.Size = new Size(72, 23);
-            label1.TabIndex = 11;
-            label1.Text = "ScrCpy";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(624, 264);
-            pictureBox1.Margin = new Padding(0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(36, 36);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
             // 
             // Signup
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1280, 720);
-            Controls.Add(textBoxPassword);
-            Controls.Add(label4);
-            Controls.Add(textBoxUsername);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
             Controls.Add(contentPanel);
             Controls.Add(footerPanel);
             Controls.Add(windowDecorationPanel);
@@ -325,9 +387,14 @@
             footerPanel.PerformLayout();
             contentPanel.ResumeLayout(false);
             contentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -340,16 +407,19 @@
         private PictureBox close;
         private Label copyrightLabel;
         private Panel contentPanel;
-        private Button signupBtn;
         private TextBox textBoxPassword;
         private Label label4;
         private TextBox textBoxUsername;
         private Label label3;
-        private Label label2;
-        private Label label1;
-        private PictureBox pictureBox1;
+        private Button button1;
+        private Button signupBtn;
         private TextBox textBoxReenterPassword;
         private Label label5;
-        private Button button1;
+        private Panel panel1;
+        private Panel panel3;
+        private Panel panel2;
+        private Label label6;
+        private PictureBox pictureBox2;
+        private Label label1;
     }
 }

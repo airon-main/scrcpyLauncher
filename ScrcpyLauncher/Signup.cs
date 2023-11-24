@@ -5,6 +5,39 @@ namespace ScrcpyLauncher
         public Signup()
         {
             InitializeComponent();
+            ColorPalette.toggleDarkMode();
+        }
+
+        public void setColor(Control control)
+        {
+            switch (control.Tag)
+            {
+                case "primary":
+                    control.BackColor = ColorPalette.primary;
+                    break;
+                case "secondary":
+                    control.BackColor = ColorPalette.secondary;
+                    break;
+                case "disabled":
+                    control.BackColor = ColorPalette.disabled;
+                    break;
+                case "background":
+                    control.BackColor = ColorPalette.background;
+                    break;
+                case "carddark":
+                    control.BackColor = ColorPalette.carddark;
+                    break;
+                case "card":
+                    control.BackColor = ColorPalette.card;
+                    break;
+                case "text":
+                    control.ForeColor = ColorPalette.text;
+                    break;
+            }
+            foreach (Control child in control.Controls)
+            {
+                setColor(child);
+            }
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -53,10 +86,14 @@ namespace ScrcpyLauncher
                     Login login = new Login();
                     login.Show();
                     this.Hide();
-                } else {
+                }
+                else
+                {
                     DialogResult dialogResult = MessageBox.Show("Confirm password berbeda", "Warning!", MessageBoxButtons.OK);
                 }
-            } else {
+            }
+            else
+            {
                 DialogResult dialogResult = MessageBox.Show("Isi data yang dibutuhkan", "Warning!", MessageBoxButtons.OK);
             }
             //Login login = new Login();
