@@ -5,6 +5,7 @@ namespace ScrcpyLauncher
         public Login()
         {
             InitializeComponent();
+            textBoxFilePath.Text = "C:\\Users\\Aaron\\Downloads\\Compressed\\scrcpy-win64-v2.1.1\\scrcpy.exe";
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -55,6 +56,7 @@ namespace ScrcpyLauncher
             {
                 if (textBoxUsername.Text == UserData.UserName && textBoxPassword.Text == UserData.Password)
                 {
+                    UserData.ScrcpyPath = textBoxFilePath.Text;
                     Dashboard dashboard = new Dashboard();
                     dashboard.Show();
                     this.Hide();
@@ -66,6 +68,7 @@ namespace ScrcpyLauncher
                     {
                         textBoxUsername.Text = "";
                         textBoxPassword.Text = "";
+                        textBoxFilePath.Text = "";
                     }
                 }
             }

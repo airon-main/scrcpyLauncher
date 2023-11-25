@@ -195,7 +195,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Credits";
+            settingsBtn.Text = "Settings";
             settingsBtn.UseVisualStyleBackColor = false;
             settingsBtn.Click += settingsBtn_Click;
             // 
@@ -300,6 +300,7 @@
             Connect.Text = "Connect";
             Connect.TextAlign = ContentAlignment.MiddleRight;
             Connect.UseVisualStyleBackColor = false;
+            Connect.Click += Connect_Click;
             // 
             // footerPanel
             // 

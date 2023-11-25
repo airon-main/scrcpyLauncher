@@ -1,11 +1,14 @@
+using System.Diagnostics;
+
 namespace ScrcpyLauncher
 {
-    public partial class Credits : Form
+    public partial class Settings : Form
     {
-        public Credits()
+        public Settings()
         {
             InitializeComponent();
             deviceLabel.Text = "No Device Connected";
+            textBoxFilePath.Text = UserData.ScrcpyPath;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -71,6 +74,21 @@ namespace ScrcpyLauncher
             User user = new User();
             user.Show();
             this.Hide();
+        }
+
+        private void Connect_Click(object sender, EventArgs e)
+        {
+            try { Process.Start(UserData.ScrcpyPath); }
+            catch
+            {
+                DialogResult dialogResult = MessageBox.Show("File Scrcpy tidak ditemukan", "Warning!", MessageBoxButtons.OK);
+            }
+        }
+
+        private void confirmBtn_Click(object sender, EventArgs e)
+        {
+            UserData.ScrcpyPath = textBoxFilePath.Text;
+            textBoxFilePath.Text = UserData.ScrcpyPath;
         }
     }
 }

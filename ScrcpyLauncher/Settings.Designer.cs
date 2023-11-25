@@ -1,6 +1,6 @@
 ﻿namespace ScrcpyLauncher
 {
-    partial class Credits
+    partial class Settings
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credits));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             windowDecorationPanel = new Panel();
             minimize = new PictureBox();
             maximize = new PictureBox();
@@ -48,6 +48,14 @@
             deviceLabel = new Label();
             copyrightLabel = new Label();
             contentPanel = new Panel();
+            panel1 = new Panel();
+            label3 = new Label();
+            panel2 = new Panel();
+            textBoxFilePath = new TextBox();
+            clearBtn = new Button();
+            label2 = new Label();
+            pictureBox2 = new PictureBox();
+            confirmBtn = new Button();
             windowDecorationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)minimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)maximize).BeginInit();
@@ -56,6 +64,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             topNavPanel.SuspendLayout();
             footerPanel.SuspendLayout();
+            contentPanel.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // windowDecorationPanel
@@ -173,7 +185,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Credits";
+            settingsBtn.Text = "Settings";
             settingsBtn.UseVisualStyleBackColor = false;
             // 
             // devicesBtn
@@ -278,6 +290,7 @@
             Connect.Text = "Connect";
             Connect.TextAlign = ContentAlignment.MiddleRight;
             Connect.UseVisualStyleBackColor = false;
+            Connect.Click += Connect_Click;
             // 
             // footerPanel
             // 
@@ -319,13 +332,123 @@
             // contentPanel
             // 
             contentPanel.BackColor = Color.FromArgb(235, 247, 241);
+            contentPanel.Controls.Add(panel1);
             contentPanel.Dock = DockStyle.Fill;
             contentPanel.Location = new Point(200, 93);
             contentPanel.Name = "contentPanel";
             contentPanel.Size = new Size(1080, 594);
             contentPanel.TabIndex = 4;
             // 
-            // Credits
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(confirmBtn);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(clearBtn);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(53, 60);
+            panel1.Margin = new Padding(50);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(977, 478);
+            panel1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(20, 75);
+            label3.Margin = new Padding(0);
+            label3.Name = "label3";
+            label3.Size = new Size(56, 15);
+            label3.TabIndex = 59;
+            label3.Text = "File Path";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(242, 242, 242);
+            panel2.Controls.Add(textBoxFilePath);
+            panel2.Location = new Point(94, 60);
+            panel2.Margin = new Padding(20);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(6, 15, 6, 15);
+            panel2.Size = new Size(863, 46);
+            panel2.TabIndex = 58;
+            panel2.Tag = "card";
+            // 
+            // textBoxFilePath
+            // 
+            textBoxFilePath.BackColor = Color.FromArgb(242, 242, 242);
+            textBoxFilePath.BorderStyle = BorderStyle.None;
+            textBoxFilePath.Dock = DockStyle.Fill;
+            textBoxFilePath.Location = new Point(6, 15);
+            textBoxFilePath.Margin = new Padding(0);
+            textBoxFilePath.Name = "textBoxFilePath";
+            textBoxFilePath.Size = new Size(851, 16);
+            textBoxFilePath.TabIndex = 27;
+            textBoxFilePath.Tag = "card";
+            // 
+            // clearBtn
+            // 
+            clearBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            clearBtn.BackColor = Color.FromArgb(136, 136, 136);
+            clearBtn.FlatAppearance.BorderSize = 0;
+            clearBtn.FlatStyle = FlatStyle.Flat;
+            clearBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            clearBtn.ForeColor = Color.White;
+            clearBtn.Location = new Point(1669, 16);
+            clearBtn.Margin = new Padding(0);
+            clearBtn.Name = "clearBtn";
+            clearBtn.Size = new Size(65, 33);
+            clearBtn.TabIndex = 29;
+            clearBtn.Text = "Clear";
+            clearBtn.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(49, 25);
+            label2.Margin = new Padding(0);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Settings";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(20, 20);
+            pictureBox2.Margin = new Padding(20);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(24, 24);
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
+            // confirmBtn
+            // 
+            confirmBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            confirmBtn.BackColor = Color.FromArgb(48, 221, 129);
+            confirmBtn.FlatAppearance.BorderSize = 0;
+            confirmBtn.FlatStyle = FlatStyle.Flat;
+            confirmBtn.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            confirmBtn.ForeColor = Color.White;
+            confirmBtn.Location = new Point(20, 126);
+            confirmBtn.Margin = new Padding(0);
+            confirmBtn.Name = "confirmBtn";
+            confirmBtn.Size = new Size(937, 47);
+            confirmBtn.TabIndex = 60;
+            confirmBtn.Text = "Confirm Changes";
+            confirmBtn.UseVisualStyleBackColor = false;
+            confirmBtn.Click += confirmBtn_Click;
+            // 
+            // Settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -336,7 +459,7 @@
             Controls.Add(sideBarPanel);
             Controls.Add(windowDecorationPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Credits";
+            Name = "Settings";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Dashboard_Load;
@@ -351,6 +474,12 @@
             topNavPanel.ResumeLayout(false);
             footerPanel.ResumeLayout(false);
             footerPanel.PerformLayout();
+            contentPanel.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -375,5 +504,13 @@
         private Button userBtn;
         private Button settingsBtn;
         private Button devicesBtn;
+        private Panel panel1;
+        private Button clearBtn;
+        private Label label2;
+        private PictureBox pictureBox2;
+        private Label label3;
+        private Panel panel2;
+        private TextBox textBoxFilePath;
+        private Button confirmBtn;
     }
 }

@@ -1,5 +1,7 @@
 namespace ScrcpyLauncher
 {
+    using System.Diagnostics;
+
     public partial class Dashboard : Form
     {
         public Dashboard()
@@ -63,7 +65,7 @@ namespace ScrcpyLauncher
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            Credits settings = new Credits();
+            Settings settings = new Settings();
             settings.Show();
             this.Hide();
         }
@@ -87,6 +89,14 @@ namespace ScrcpyLauncher
             else
             {
                 DialogResult dialogResult = MessageBox.Show("Isi data yang dibutuhkan", "Warning!", MessageBoxButtons.OK);
+            }
+        }
+
+        private void Connect_Click(object sender, EventArgs e)
+        {
+            try { Process.Start(UserData.ScrcpyPath); }
+            catch {
+                DialogResult dialogResult = MessageBox.Show("File Scrcpy tidak ditemukan", "Warning!", MessageBoxButtons.OK);
             }
         }
     }

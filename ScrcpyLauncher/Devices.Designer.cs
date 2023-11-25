@@ -189,7 +189,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Credits";
+            settingsBtn.Text = "Settings";
             settingsBtn.UseVisualStyleBackColor = false;
             settingsBtn.Click += settingsBtn_Click;
             // 
@@ -271,11 +271,11 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(78, 10);
-            button1.Margin = new Padding(0);
+            button1.Location = new Point(77, 10);
+            button1.Margin = new Padding(10);
             button1.Name = "button1";
             button1.Size = new Size(40, 40);
-            button1.TabIndex = 1;
+            button1.TabIndex = 6;
             button1.UseVisualStyleBackColor = false;
             // 
             // Connect
@@ -286,14 +286,15 @@
             Connect.FlatStyle = FlatStyle.Flat;
             Connect.Font = new Font("Roboto", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             Connect.ForeColor = Color.White;
-            Connect.Location = new Point(11, 10);
-            Connect.Margin = new Padding(0);
+            Connect.Location = new Point(10, 10);
+            Connect.Margin = new Padding(10);
             Connect.Name = "Connect";
             Connect.Size = new Size(67, 40);
-            Connect.TabIndex = 0;
+            Connect.TabIndex = 5;
             Connect.Text = "Connect";
             Connect.TextAlign = ContentAlignment.MiddleRight;
             Connect.UseVisualStyleBackColor = false;
+            Connect.Click += Connect_Click;
             // 
             // footerPanel
             // 
@@ -531,9 +532,7 @@
         private PictureBox close;
         private Label copyrightLabel;
         private Label deviceLabel;
-        private Button Connect;
         private Panel contentPanel;
-        private Button button1;
         private Label label1;
         private PictureBox pictureBox1;
         private Button dashboardBtn;
@@ -551,5 +550,7 @@
         private Label label2;
         private PictureBox pictureBox2;
         private Button clearBtn;
+        private Button button1;
+        private Button Connect;
     }
 }

@@ -185,7 +185,7 @@
             settingsBtn.Name = "settingsBtn";
             settingsBtn.Size = new Size(200, 40);
             settingsBtn.TabIndex = 4;
-            settingsBtn.Text = "Credits";
+            settingsBtn.Text = "Settings";
             settingsBtn.UseVisualStyleBackColor = false;
             settingsBtn.Click += settingsBtn_Click;
             // 
@@ -291,6 +291,7 @@
             Connect.Text = "Connect";
             Connect.TextAlign = ContentAlignment.MiddleRight;
             Connect.UseVisualStyleBackColor = false;
+            Connect.Click += Connect_Click;
             // 
             // footerPanel
             // 
@@ -407,6 +408,7 @@
             textBoxPassword.Location = new Point(130, 100);
             textBoxPassword.Margin = new Padding(20);
             textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '*';
             textBoxPassword.Size = new Size(748, 23);
             textBoxPassword.TabIndex = 28;
             // 
@@ -513,9 +515,7 @@
         private PictureBox close;
         private Label copyrightLabel;
         private Label deviceLabel;
-        private Button Connect;
         private Panel contentPanel;
-        private Button button1;
         private Label label1;
         private PictureBox pictureBox1;
         private Button dashboardBtn;
@@ -532,5 +532,7 @@
         private Button logoutBtn;
         private CheckBox checkBoxShowPassword;
         private Button confirmEditBtn;
+        private Button button1;
+        private Button Connect;
     }
 }
